@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:student_management_provider/provider/student_provider.dart';
-import 'package:student_management_provider/screens/splash_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -12,13 +9,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (_) => StudentProvider(),
-      child: MaterialApp(
-        title: 'Student Management',
-        theme: ThemeData(primarySwatch: Colors.blue),
-        home: const SplashScreen(),
-      ),
-    );
+    return Scaffold();
   }
 }
